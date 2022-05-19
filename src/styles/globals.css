@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply w-[223px] rounded-xl border-2 border-transparent bg-slate-50 px-6 py-[12px] text-center text-sm font-medium text-slate-900;
+  }
+
+  .btn-secondary {
+    @apply w-[223px] rounded-xl border-2 border-slate-100 bg-none px-6 py-[12px] text-center text-sm font-medium text-slate-100;
+  }
+}

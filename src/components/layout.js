@@ -17,7 +17,10 @@ const Layout = ({ children }) => {
         </Link>
 
         {/* Hamburger icon */}
-        <span onClick={() => setIsMobileNavOpen(true)}>
+        <span
+          className="cursor-pointer"
+          onClick={() => setIsMobileNavOpen(true)}
+        >
           <Image
             src="/hamburger.svg"
             alt="Hamburger icon"
@@ -35,7 +38,7 @@ const Layout = ({ children }) => {
           }`}
         >
           <span
-            className="absolute top-7 right-5"
+            className="absolute top-7 right-5 cursor-pointer"
             onClick={() => setIsMobileNavOpen(false)}
           >
             <Image src="/close.svg" width={24} height={24} alt="Close icon" />

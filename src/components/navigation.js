@@ -12,7 +12,7 @@ const Navigation = () => {
         <Link href="/">
           <a
             aria-label="Go to homepage"
-            className="relative h-[19px] w-[93px] md:h-[29px] md:w-[139px]"
+            className="relative h-[21px] w-[95px] md:h-[28px] md:w-[127px]"
           >
             <Image src="/logo.svg" alt="Website logo" layout="fill" />
           </a>
@@ -44,7 +44,7 @@ const Navigation = () => {
               : "pointer-events-none translate-x-full md:pointer-events-auto md:translate-x-0"
           }`}
         >
-          <ul className=" flex flex-col items-start justify-center gap-10 text-lg font-semibold text-slate-100 md:flex-row md:gap-14 md:text-base">
+          <ul className=" flex flex-col items-start justify-center gap-10 text-lg font-semibold text-slate-100 md:flex-row md:gap-14 md:text-base md:font-normal">
             <li>
               <Link href="/#templates">
                 <a>Templates</a>

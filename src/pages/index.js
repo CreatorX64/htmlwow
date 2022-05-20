@@ -16,17 +16,20 @@ const HomePage = () => {
           <Navigation />
 
           {/* Hero */}
-          <div className="mt-[76px] flex flex-col items-center justify-start">
+          <div className="mt-[76px] flex flex-col items-center justify-start md:mt-[94px]">
             <h1 className="text-center">
-              <span className="block text-base font-extrabold text-slate-50">
+              <span className="block text-base font-bold text-slate-50 md:text-[32px]">
                 HTML templates that make you go
               </span>
-              <span className="block -translate-y-5 bg-[url('/pattern-title.jpg')] bg-cover bg-clip-text bg-center text-[94px] font-extrabold text-transparent">
+              {/* <span className="block -translate-y-5 bg-[url('/pattern-title.jpg')] bg-cover bg-clip-text bg-center text-[94px] font-black text-transparent md:-translate-y-11 md:text-[186px]">
+                WOW
+              </span> */}
+              <span className="-mt-6 block bg-[url('/pattern-title.jpg')] bg-cover bg-clip-text bg-center font-display text-[113px] text-transparent md:-mt-11 md:text-[227px]">
                 WOW
               </span>
             </h1>
 
-            <div className="flex flex-col items-center justify-center gap-6">
+            <div className="flex flex-col items-center justify-center gap-6 md:-translate-y-8 md:flex-row">
               <a href="#templates" className="btn-primary">
                 Explore all templates ↓
               </a>

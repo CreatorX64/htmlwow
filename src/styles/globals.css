@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&family=Modak&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,10 +6,10 @@
 
 @layer components {
   .btn-primary {
-    @apply w-[223px] rounded-xl border-2 border-transparent bg-slate-50 px-6 py-[12px] text-center text-sm font-medium text-slate-900;
+    @apply w-[223px] rounded-xl border-2 border-transparent bg-slate-50 px-6 py-[12px] text-center text-sm font-medium text-slate-900 md:w-max md:text-base;
   }
 
   .btn-secondary {
-    @apply w-[223px] rounded-xl border-2 border-slate-100 bg-none px-6 py-[12px] text-center text-sm font-medium text-slate-100;
+    @apply w-[223px] rounded-xl border-2 border-slate-100 bg-none px-6 py-[12px] text-center text-sm font-medium text-slate-100 md:w-max md:text-base;
   }
 }

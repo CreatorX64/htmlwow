@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        brand: ["Inter", "sans-serif"]
+        brand: ["Rubik", "sans-serif"],
+        display: ["Modak", "cursive"]
       }
     }
   },

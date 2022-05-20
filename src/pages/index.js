@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/navigation";
 
 const HomePage = () => {
@@ -21,17 +22,25 @@ const HomePage = () => {
               <span className="block text-base font-bold text-slate-50 md:text-[32px]">
                 HTML templates that make you go
               </span>
-              {/* <span className="block -translate-y-5 bg-[url('/pattern-title.jpg')] bg-cover bg-clip-text bg-center text-[94px] font-black text-transparent md:-translate-y-11 md:text-[186px]">
-                WOW
-              </span> */}
-              <span className="-mt-6 block bg-[url('/pattern-title.jpg')] bg-cover bg-clip-text bg-center font-display text-[113px] text-transparent md:-mt-11 md:text-[227px]">
+              <span className="-mt-6 block bg-[url('/pattern-title.jpg')] bg-cover bg-clip-text bg-center font-display text-[113px] text-transparent md:-mt-12 md:text-[227px]">
                 WOW
               </span>
             </h1>
 
-            <div className="flex flex-col items-center justify-center gap-6 md:-translate-y-8 md:flex-row">
-              <a href="#templates" className="btn-primary">
-                Explore all templates ↓
+            <div className="flex flex-col items-center justify-center gap-4 md:-translate-y-8 md:flex-row md:gap-6">
+              <a
+                href="#templates"
+                className="btn-primary flex items-center justify-center gap-[10px]"
+              >
+                <span>Explore all templates</span>
+                <span className="relative block h-[14px] w-[12px]">
+                  <Image
+                    src="/arrow-down.svg"
+                    alt="Down arrow"
+                    aria-hidden="true"
+                    layout="fill"
+                  />
+                </span>
               </a>
               <Link href="/about">
                 <a className="btn-secondary">About this project</a>

@@ -2,9 +2,11 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { Link as ScrollLink, Element as ScrollTarget } from "react-scroll";
+import useSound from "use-sound";
+
 import Navigation from "@/components/navigation";
-import { getTemplates } from "@/lib/templates";
 import TemplateCard from "@/components/template-card";
+import { getTemplates } from "@/lib/templates";
 
 export const getStaticProps = () => {
   const templates = getTemplates();
@@ -17,6 +19,8 @@ export const getStaticProps = () => {
 };
 
 const HomePage = ({ templates }) => {
+  const [playNameSound] = useSound("/hakan.mp3");
+
   return (
     <>
       <Head>
@@ -77,6 +81,10 @@ const HomePage = ({ templates }) => {
                 <TemplateCard key={template.id} template={template} />
               ))}
 
+              <p className="mt-4 text-center text-sm text-slate-400 md:text-base lg:text-lg">
+                ✨ More templates coming soon! ✨
+              </p>
+
               {/* Contact form */}
               <div className="mt-16 md:mt-24 lg:mt-28">
                 <h2 className="mb-8 text-center text-lg font-bold md:mb-12 md:text-3xl">
@@ -123,45 +131,67 @@ const HomePage = ({ templates }) => {
         {/* Wave decoration */}
         <div className="h-[105px] bg-[url('/wave-bottom.png')] bg-cover bg-center"></div>
 
-        <div className="px-6 py-10">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            placeat modi nesciunt natus autem sed amet ratione molestiae
-            perferendis consequatur rerum sunt, numquam, deserunt labore, ab
-            quam a adipisci. Labore! Enim maiores, suscipit consectetur, nihil
-            adipisci id non similique inventore voluptatum fuga consequatur
-            deleniti saepe fugiat accusamus commodi quia sit nemo reprehenderit.
-            Voluptate laboriosam iure nobis ea pariatur. Fugiat, perspiciatis!
-            Eveniet voluptatem id minus optio ab, expedita, ipsam ducimus
-            obcaecati, quae placeat repudiandae perspiciatis adipisci ea ex!
-            Illo, consequuntur ab quaerat libero dicta sunt accusamus saepe
-            aspernatur, enim impedit dolor. Fugiat vel ipsam sapiente nesciunt
-            quia nam temporibus enim quaerat quidem minima facere, laboriosam
-            alias odio. Repellat, corporis alias rem sed repudiandae nostrum vel
-            eaque fugiat eius id earum aspernatur! Porro, voluptas error
-            voluptatum consequuntur ab facilis similique adipisci! Nostrum
-            molestiae sed illum expedita sapiente necessitatibus ad voluptate.
-            Repudiandae sapiente nisi beatae provident impedit fugit numquam
-            iste autem voluptatibus illo. Cumque, tempora eius! Asperiores nam,
-            soluta consectetur eligendi porro architecto esse assumenda aliquam
-            voluptate quidem modi doloremque. Blanditiis, ad dolores.
-            Repudiandae, alias. Ducimus quas odio ab dolore explicabo quibusdam
-            error. Ut voluptates vero illum at? Odio molestias mollitia nihil
-            nisi, enim ducimus maiores fugit commodi qui voluptatum aliquid
-            placeat similique exercitationem consequuntur ipsum laudantium?
-            Rerum vel rem exercitationem labore natus. Assumenda iusto veniam
-            distinctio velit corrupti repellendus tenetur nobis, sed tempore
-            vero perferendis dolores libero consequuntur commodi, consectetur
-            expedita eaque necessitatibus neque voluptatum magnam repellat eum
-            odit. Repellendus, cum quasi! Dolorem labore numquam nemo maxime
-            architecto aperiam quia magnam natus, aut rerum maiores eligendi
-            delectus fugiat illo laboriosam, blanditiis, officiis molestias
-            quisquam nesciunt nisi autem optio officia? Eos, eveniet veniam?
-            Reiciendis delectus cum iure atque ducimus aspernatur eligendi
-            vitae. Ipsam consectetur facere sit dolor facilis magni autem, nisi
-            obcaecati corrupti mollitia accusantium adipisci hic corporis
-            commodi, repellat similique aspernatur. Tempora!
-          </p>
+        {/* Meet the creator */}
+        <div className="px-4 py-16">
+          <h2 className="mb-8 text-center text-lg font-bold text-slate-50">
+            Meet the creator...
+          </h2>
+
+          <div className="shadow-inset-custom grid grid-cols-[86px_1fr] gap-x-5 gap-y-5 overflow-hidden rounded-2xl bg-slate-900 px-5 pt-6 pb-7">
+            {/* Image */}
+            <div className="relative h-[86px] w-[86px]">
+              <Image
+                src="/avatar.jpg"
+                alt="Avatar of Hakan, the creator of the website"
+                layout="fill"
+                className="rounded-full"
+              />
+            </div>
+
+            {/* Name box */}
+            <div className="grid grid-cols-[1fr_max-content] items-center justify-items-start gap-y-2 self-center justify-self-start">
+              <p className="text-lg font-bold">Hi, I&apos;m Hakan</p>
+              <span className="text-lg font-bold">👋</span>
+              <button
+                className="flex items-center gap-[6px] rounded bg-slate-800 px-2 py-1 text-slate-400"
+                onClick={playNameSound}
+              >
+                <span className="font-mono tracking-widest">/ha:kan/</span>
+                <span className="relative block h-[14px] w-[14px]">
+                  <Image
+                    src="/sound.svg"
+                    alt="Sound icon"
+                    layout="fill"
+                    aria-hidden
+                  />
+                </span>
+              </button>
+            </div>
+
+            {/* Bio text */}
+            <div className="col-span-2 space-y-[14px] text-sm leading-loose text-slate-200">
+              <p>
+                I do frontend development to create web[sites|apps] using HTML,
+                CSS, JavaScript, Tailwind CSS, React, Next.js, Firebase, and
+                more.
+              </p>
+              <p>
+                While creating my projects, I keep the best design & development
+                practices in mind so that my projects are{" "}
+                <span className="text-slate-400">(1)</span> accessible,{" "}
+                <span className="text-slate-400">(2)</span>
+                follow SEO guidelines, and{" "}
+                <span className="text-slate-400">(3)</span> have the best
+                performance possible.
+              </p>
+              <p>
+                You can contact to me anytime to share a project idea, hire me
+                as a freelancer, or just to say hi :)
+              </p>
+            </div>
+
+            {/* Contact links */}
+          </div>
         </div>
       </div>
     </>

@@ -44,7 +44,7 @@ const Navigation = () => {
               : "pointer-events-none translate-x-full md:pointer-events-auto md:translate-x-0"
           }`}
         >
-          <ul className=" flex flex-col items-start justify-center gap-10 text-lg font-semibold text-slate-100 md:flex-row md:text-base">
+          <ul className=" flex flex-col items-start justify-center gap-10 text-lg font-semibold text-slate-100 md:flex-row md:gap-14 md:text-base">
             <li>
               <Link href="/#templates">
                 <a>Templates</a>

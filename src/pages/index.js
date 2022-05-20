@@ -71,7 +71,7 @@ const HomePage = ({ templates }) => {
         <ScrollTarget name="templates">
           <main className="px-4 py-20">
             {/* Template Cards */}
-            <div className="flex flex-col items-center gap-8">
+            <div className="flex flex-col items-center gap-16 md:mx-auto md:max-w-[1062px] md:items-stretch">
               {templates.map((template) => (
                 <TemplateCard key={template.id} template={template} />
               ))}

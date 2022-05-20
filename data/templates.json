@@ -8,6 +8,15 @@
       "description": "Nestor is a playful/minimalistic app landing page template built for startups and app makers.",
       "purchaseLink": "#!",
       "previewLink": "#!"
+    },
+    {
+      "id": "delbin",
+      "title": "Delbin — App Landing Page",
+      "imagePath": "/templates/ss-delbin.jpg",
+      "techStack": "HTML, CSS, Tailwind CSS, Vite",
+      "description": "Delbin is a bold app landing page template built for startups and app makers.",
+      "purchaseLink": "#!",
+      "previewLink": "#!"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "templates": [
+    {
+      "id": "nestor",
+      "title": "Nestor — App Landing Page",
+      "imagePath": "/templates/ss-nestor.jpg",
+      "techStack": "HTML, CSS, Tailwind CSS, Vite",
+      "description": "Nestor is a playful/minimalistic app landing page template built for startups and app makers.",
+      "purchaseLink": "#!",
+      "previewLink": "#!"
+    }
+  ]
+}

@@ -1,9 +1,22 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { Link as ScrollLink, Element as ScrollTarget } from "react-scroll";
 import Navigation from "@/components/navigation";
+import { getTemplates } from "@/lib/templates";
+import TemplateCard from "@/components/template-card";
 
-const HomePage = () => {
+export const getStaticProps = () => {
+  const templates = getTemplates();
+
+  return {
+    props: {
+      templates
+    }
+  };
+};
+
+const HomePage = ({ templates }) => {
   return (
     <>
       <Head>
@@ -28,8 +41,10 @@ const HomePage = () => {
             </h1>
 
             <div className="flex flex-col items-center justify-center gap-4 md:-translate-y-8 md:flex-row md:gap-6">
-              <a
-                href="#templates"
+              <ScrollLink
+                to="templates"
+                smooth={true}
+                duration={500}
                 className="btn-primary flex items-center justify-center gap-[10px]"
               >
                 <span>Explore all templates</span>
@@ -41,7 +56,8 @@ const HomePage = () => {
                     layout="fill"
                   />
                 </span>
-              </a>
+              </ScrollLink>
+
               <Link href="/about">
                 <a className="btn-secondary">About this project</a>
               </Link>
@@ -52,9 +68,16 @@ const HomePage = () => {
           <div className="mt-auto h-[160px] bg-[url('/wave-top.png')] bg-cover bg-center"></div>
         </div>
 
-        <main className="px-4 py-20">
-          <p>These are the templates</p>
-        </main>
+        <ScrollTarget name="templates">
+          <main className="px-4 py-20">
+            {/* Template Cards */}
+            <div className="flex flex-col items-center gap-8">
+              {templates.map((template) => (
+                <TemplateCard key={template.id} template={template} />
+              ))}
+            </div>
+          </main>
+        </ScrollTarget>
       </div>
     </>
   );

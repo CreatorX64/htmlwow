@@ -5,6 +5,8 @@ import { useState } from "react";
 const Navigation = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
+  const toggleMobileNav = () => setIsMobileNavOpen(!isMobileNavOpen);
+
   return (
     <nav className="relative p-4 md:py-11 md:px-20">
       <div className="container mx-auto flex items-center justify-between">
@@ -22,7 +24,7 @@ const Navigation = () => {
         <span
           className="z-[100] cursor-pointer md:hidden"
           aria-label="Toggle navigation menu"
-          onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
+          onClick={toggleMobileNav}
         >
           {isMobileNavOpen ? (
             <Image src="/close.svg" width={32} height={32} alt="Close icon" />
@@ -46,23 +48,23 @@ const Navigation = () => {
         >
           <ul className=" flex flex-col items-start justify-center gap-10 text-lg font-semibold text-slate-100 md:flex-row md:gap-14 md:text-base md:font-normal">
             <li>
-              <Link href="/#templates">
-                <a>Templates</a>
+              <Link href="/">
+                <a onClick={toggleMobileNav}>Home</a>
               </Link>
             </li>
             <li>
               <Link href="/about">
-                <a>About</a>
+                <a onClick={toggleMobileNav}>About</a>
               </Link>
             </li>
             <li>
               <Link href="/license">
-                <a>License</a>
+                <a onClick={toggleMobileNav}>License</a>
               </Link>
             </li>
             <li>
-              <Link href="/#contact">
-                <a>Contact</a>
+              <Link href="/contact">
+                <a onClick={toggleMobileNav}>Contact</a>
               </Link>
             </li>
           </ul>

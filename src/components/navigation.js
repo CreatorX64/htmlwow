@@ -19,8 +19,8 @@ const Navigation = () => {
   }, [isMobileNavOpen]);
 
   return (
-    <nav className="relative p-4 md:py-11 md:px-20">
-      <div className="container mx-auto flex items-center justify-between">
+    <nav className="relative p-4 px-4 sm:px-6 md:py-11">
+      <div className="mx-auto flex items-center justify-between lg:container">
         {/* Logo */}
         <Link href="/">
           <a
@@ -57,26 +57,26 @@ const Navigation = () => {
               : "pointer-events-none translate-x-full md:pointer-events-auto md:translate-x-0"
           }`}
         >
-          <ul className="flex flex-col items-center justify-center gap-10 text-lg font-semibold text-slate-100 md:flex-row md:gap-14 md:text-base md:font-normal">
+          <ul className="flex flex-col items-center justify-center gap-10 md:flex-row md:gap-14">
             <li>
               <Link href="/">
-                <a className="md:hidden" onClick={toggleMobileNav}>
+                <a className="nav-link md:hidden" onClick={toggleMobileNav}>
                   Home
                 </a>
               </Link>
               <Link href="/">
-                <a className="hidden md:inline">Home</a>
+                <a className="nav-link hidden md:inline">Home</a>
               </Link>
             </li>
 
             <li>
               <Link href="/license">
-                <a className="md:hidden" onClick={toggleMobileNav}>
+                <a className="nav-link md:hidden" onClick={toggleMobileNav}>
                   License
                 </a>
               </Link>
               <Link href="/license">
-                <a className="hidden md:inline">License</a>
+                <a className="nav-link hidden md:inline">License</a>
               </Link>
             </li>
 

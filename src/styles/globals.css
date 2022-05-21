@@ -16,4 +16,12 @@
   .input {
     @apply block w-full rounded-xl bg-slate-700 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-300 md:px-6 md:py-4 md:text-base;
   }
+
+  .link {
+    @apply text-blue-400 underline underline-offset-2 transition-colors hover:text-blue-300;
+  }
+
+  .nav-link {
+    @apply text-lg font-semibold text-slate-100 transition hover:text-blue-200 md:text-base md:font-normal;
+  }
 }

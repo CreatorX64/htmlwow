@@ -5,7 +5,7 @@ const Footer = () => {
         Made with 💙 by{" "}
         <a
           href="https://twitter.com/CreatorX64"
-          className="underline underline-offset-2"
+          className="link"
           target="_blank"
           rel="noreferrer"
         >

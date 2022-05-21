@@ -10,7 +10,7 @@ const Document = () => {
           content="HTML templates that make you go WOW."
         />
       </Head>
-      <body className="min-h-screen overflow-x-hidden bg-slate-800 font-brand text-slate-100">
+      <body className="min-h-screen overflow-x-hidden bg-slate-800 font-brand text-slate-100 scrollbar scrollbar-track-blue-100 scrollbar-thumb-blue-900">
         <Main />
         <NextScript />
       </body>

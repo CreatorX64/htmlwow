@@ -44,13 +44,28 @@ const HomePage = ({ templates }) => {
 
         <div className="px-4 py-16 md:py-24 md:px-6 lg:py-36 lg:px-10">
           <h2 className="mb-8 text-center text-lg font-bold text-slate-50 md:mb-12 md:text-3xl">
-            Meet the creator...
+            About this project
           </h2>
 
           <ScrollTarget name="about">
             <AboutCard />
           </ScrollTarget>
         </div>
+
+        {/* Footer */}
+        <footer className="border-t-2 border-slate-900 pt-10 pb-28 md:pt-20 md:pb-36">
+          <p className="text-center text-sm text-slate-400 md:text-base">
+            Made with 💙 by{" "}
+            <a
+              href="https://twitter.com/CreatorX64"
+              className="underline underline-offset-2"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @CreatorX64
+            </a>
+          </p>
+        </footer>
       </div>
     </>
   );

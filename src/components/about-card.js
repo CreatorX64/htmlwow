@@ -2,14 +2,14 @@ import Image from "next/image";
 import useSound from "use-sound";
 
 const AboutCard = () => {
-  const [playNameSound] = useSound("/hakan.mp3");
+  const [playNameSound] = useSound("/audio/hakan.mp3");
 
   return (
     <div className="shadow-inset-custom mx-auto grid w-72 grid-cols-[86px_1fr] gap-x-4 gap-y-5 overflow-hidden rounded-2xl bg-slate-900 px-5 pt-6 pb-7 md:w-auto md:max-w-[1062px] md:grid-cols-[127px_1fr] md:grid-rows-[32px_67px_auto_auto] md:gap-x-10 md:gap-y-7 md:px-8 md:pt-8 md:pb-9 lg:grid-cols-[168px_1fr] lg:grid-rows-[32px_108px_auto_auto] lg:gap-x-12 lg:px-12 lg:py-10">
       {/* Image */}
       <div className="relative h-[86px] w-[86px] md:row-span-2 md:h-[127px] md:w-[127px] lg:h-[168px] lg:w-[168px]">
         <Image
-          src="/avatar.jpg"
+          src="/images/avatar.jpg"
           alt="Avatar of Hakan, the creator of the website"
           layout="fill"
           className="rounded-full"
@@ -27,7 +27,7 @@ const AboutCard = () => {
           <span className="font-mono tracking-widest">/ha:kan/</span>
           <span className="relative block h-[14px] w-[14px] md:h-4 md:w-4">
             <Image
-              src="/sound.svg"
+              src="/icons/sound.svg"
               alt="Sound icon"
               layout="fill"
               aria-hidden
@@ -56,7 +56,7 @@ const AboutCard = () => {
           <span className="xl:font-semibold xl:text-blue-300">contact</span> to
           me anytime to share a project idea, hire me as a freelancer, or just
           to say hi :)
-          <span className="-left-8 -bottom-8 hidden h-[23px] w-[123px] bg-[url('/arrow-left.png')] bg-cover xl:absolute xl:block"></span>
+          <span className="-left-8 -bottom-8 hidden h-[23px] w-[123px] bg-[url('/images/arrow-left.png')] bg-cover xl:absolute xl:block"></span>
         </p>
       </div>
 
@@ -71,7 +71,11 @@ const AboutCard = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src="/icon-twitter.svg" alt="Twitter icon" layout="fill" />
+              <Image
+                src="/icons/twitter.svg"
+                alt="Twitter icon"
+                layout="fill"
+              />
             </a>
           </li>
           <li>
@@ -82,7 +86,7 @@ const AboutCard = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src="/icon-github.svg" alt="GitHub icon" layout="fill" />
+              <Image src="/icons/github.svg" alt="GitHub icon" layout="fill" />
             </a>
           </li>
           <li>
@@ -94,7 +98,7 @@ const AboutCard = () => {
               rel="noreferrer"
             >
               <Image
-                src="/icon-linkedin.svg"
+                src="/icons/linkedin.svg"
                 alt="LinkedIn icon"
                 layout="fill"
               />
@@ -109,7 +113,7 @@ const AboutCard = () => {
               rel="noreferrer"
             >
               <Image
-                src="/icon-instagram.svg"
+                src="/icons/instagram.svg"
                 alt="Instagram icon"
                 layout="fill"
               />
@@ -123,7 +127,11 @@ const AboutCard = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src="/icon-spotify.svg" alt="Spotify icon" layout="fill" />
+              <Image
+                src="/icons/spotify.svg"
+                alt="Spotify icon"
+                layout="fill"
+              />
             </a>
           </li>
           <li>
@@ -134,7 +142,11 @@ const AboutCard = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src="/icon-email.svg" alt="Email icon" layout="fill" />
+              <Image
+                src="/icons/email-filled.svg"
+                alt="Email icon"
+                layout="fill"
+              />
             </a>
           </li>
         </ul>

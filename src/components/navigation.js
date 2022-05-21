@@ -27,7 +27,7 @@ const Navigation = () => {
             aria-label="Go to homepage"
             className="relative h-[21px] w-[95px] md:h-[28px] md:w-[127px]"
           >
-            <Image src="/logo.svg" alt="Website logo" layout="fill" />
+            <Image src="/images/logo.svg" alt="Website logo" layout="fill" />
           </a>
         </Link>
 
@@ -38,10 +38,15 @@ const Navigation = () => {
           onClick={toggleMobileNav}
         >
           {isMobileNavOpen ? (
-            <Image src="/close.svg" width={32} height={32} alt="Close icon" />
+            <Image
+              src="/icons/close.svg"
+              width={32}
+              height={32}
+              alt="Close icon"
+            />
           ) : (
             <Image
-              src="/hamburger.svg"
+              src="/icons/hamburger.svg"
               alt="Hamburger icon"
               width={32}
               height={32}

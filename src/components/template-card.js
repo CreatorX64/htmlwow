@@ -41,7 +41,7 @@ const TemplateCard = ({
             <span className="lg:text-base">See it live</span>
             <span className="relative block h-[15px] w-[15px]">
               <Image
-                src="/link-external.svg"
+                src="/icons/link-external.svg"
                 layout="fill"
                 alt="External link"
                 aria-hidden="true"

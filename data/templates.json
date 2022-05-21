@@ -3,7 +3,7 @@
     {
       "id": "nestor",
       "title": "Nestor — App Landing Page",
-      "imagePath": "/templates/ss-nestor.jpg",
+      "imagePath": "/images/templates/ss-nestor.jpg",
       "techStack": "HTML, CSS, Tailwind CSS, Vite",
       "description": "Nestor is a playful/minimalistic app landing page template built for startups and app makers.",
       "longDescription": "Nestor is a playful/minimalistic app landing page template built for startups and app makers. It’s extremely easy to customize and was developed with the best SEO & accessiblity practices in mind.",
@@ -13,7 +13,7 @@
     {
       "id": "delbin",
       "title": "Delbin — App Landing Page",
-      "imagePath": "/templates/ss-delbin.jpg",
+      "imagePath": "/images/templates/ss-delbin.jpg",
       "techStack": "HTML, CSS, Tailwind CSS, Vite",
       "description": "Delbin is a bold app landing page template built for startups and app makers.",
       "longDescription": "Delbin is a bold app landing page template built for startups and app makers. It’s extremely easy to customize and was developed with the best SEO & accessiblity practices in mind.",

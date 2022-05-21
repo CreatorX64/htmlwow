@@ -19,7 +19,7 @@ const ContactForm = () => {
       <button className="btn-primary flex items-center gap-[10px]">
         <span className="relative block h-5 w-5 md:h-6 md:w-6">
           <Image
-            src="/email.svg"
+            src="/icons/email-outline.svg"
             alt="Envelope icon"
             layout="fill"
             aria-hidden

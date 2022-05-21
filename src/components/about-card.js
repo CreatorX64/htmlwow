@@ -1,3 +1,9 @@
+import IconEmail from "@/icons/email";
+import IconGitHub from "@/icons/github";
+import IconInstagram from "@/icons/instagram";
+import IconLinkedIn from "@/icons/linkedin";
+import IconSpotify from "@/icons/spotify";
+import IconTwitter from "@/icons/twitter";
 import Image from "next/image";
 import useSound from "use-sound";
 
@@ -53,7 +59,7 @@ const AboutCard = () => {
         </p>
         <p className="leading-loose lg:relative">
           You can{" "}
-          <span className="xl:font-semibold xl:text-blue-300">contact</span> to
+          <span className="xl:font-semibold xl:text-blue-200">contact</span> to
           me anytime to share a project idea, hire me as a freelancer, or just
           to say hi :)
           <span className="-left-8 -bottom-8 hidden h-[23px] w-[123px] bg-[url('/images/arrow-left.png')] bg-cover xl:absolute xl:block"></span>
@@ -71,11 +77,7 @@ const AboutCard = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image
-                src="/icons/twitter.svg"
-                alt="Twitter icon"
-                layout="fill"
-              />
+              <IconTwitter />
             </a>
           </li>
           <li>
@@ -86,7 +88,7 @@ const AboutCard = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src="/icons/github.svg" alt="GitHub icon" layout="fill" />
+              <IconGitHub />
             </a>
           </li>
           <li>
@@ -97,11 +99,7 @@ const AboutCard = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image
-                src="/icons/linkedin.svg"
-                alt="LinkedIn icon"
-                layout="fill"
-              />
+              <IconLinkedIn />
             </a>
           </li>
           <li>
@@ -112,11 +110,7 @@ const AboutCard = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image
-                src="/icons/instagram.svg"
-                alt="Instagram icon"
-                layout="fill"
-              />
+              <IconInstagram />
             </a>
           </li>
           <li>
@@ -127,11 +121,7 @@ const AboutCard = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image
-                src="/icons/spotify.svg"
-                alt="Spotify icon"
-                layout="fill"
-              />
+              <IconSpotify />
             </a>
           </li>
           <li>
@@ -142,11 +132,7 @@ const AboutCard = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image
-                src="/icons/email-filled.svg"
-                alt="Email icon"
-                layout="fill"
-              />
+              <IconEmail />
             </a>
           </li>
         </ul>

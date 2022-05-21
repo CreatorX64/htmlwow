@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ExternalLinkIcon } from "@heroicons/react/outline";
 
 const TemplateCard = ({
   template: {
@@ -36,17 +37,10 @@ const TemplateCard = ({
           </a>
           <a
             href={previewLink}
-            className="flex items-center gap-[7px] text-sm text-blue-300"
+            className="link flex items-center gap-[7px] text-sm"
           >
             <span className="lg:text-base">See it live</span>
-            <span className="relative block h-[15px] w-[15px]">
-              <Image
-                src="/icons/link-external.svg"
-                layout="fill"
-                alt="External link"
-                aria-hidden="true"
-              />
-            </span>
+            <ExternalLinkIcon className="h-4 w-4" />
           </a>
         </div>
       </div>

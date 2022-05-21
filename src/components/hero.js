@@ -1,9 +1,20 @@
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 const Hero = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
-    <div className="mt-24 flex flex-col items-center justify-start">
+    <div
+      className={`mt-24 flex flex-col items-center justify-start transition duration-1000 ${
+        isLoaded ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
+      }`}
+    >
       <h1 className="text-center">
         <span className="block text-base font-bold text-slate-50 md:text-[32px]">
           HTML templates that make you go

@@ -20,7 +20,7 @@ const Navigation = () => {
 
   return (
     <nav className="relative p-4 px-4 sm:px-6 md:py-11">
-      <div className="mx-auto flex items-center justify-between lg:container">
+      <div className="mx-auto flex items-center justify-between lg:container xl:max-w-7xl">
         {/* Logo */}
         <Link href="/">
           <a

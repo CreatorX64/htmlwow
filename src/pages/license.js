@@ -6,7 +6,7 @@ const LicensePage = () => {
   return (
     <>
       <Head>
-        <title>License Agreement</title>
+        <title>License Agreement | HTMLWOW</title>
       </Head>
 
       <div className="leading-loose">
@@ -36,7 +36,7 @@ const LicensePage = () => {
               Use the templates for any personal and/or commercial project.
             </li>
             <li>
-              Edit/remix the template in any shape or form to fit it for your
+              Edit/remix the templates in any shape or form to fit it for your
               brand/project.
             </li>
             <li>

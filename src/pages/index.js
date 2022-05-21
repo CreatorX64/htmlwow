@@ -179,10 +179,9 @@ const HomePage = ({ templates }) => {
                 While creating my projects, I keep the best design & development
                 practices in mind so that my projects are{" "}
                 <span className="text-slate-400">(1)</span> accessible,{" "}
-                <span className="text-slate-400">(2)</span>
-                follow SEO guidelines, and{" "}
-                <span className="text-slate-400">(3)</span> have the best
-                performance possible.
+                <span className="text-slate-400">(2)</span> follow SEO
+                guidelines, and <span className="text-slate-400">(3)</span> have
+                the best performance possible.
               </p>
               <p>
                 You can contact to me anytime to share a project idea, hire me

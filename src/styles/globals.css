@@ -5,12 +5,20 @@
 @tailwind utilities;
 
 @layer components {
+  .btn {
+    @apply w-[223px] cursor-pointer rounded-xl border-2 px-6 py-[12px] text-center text-sm font-medium transition-transform hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-blue-500 md:w-max md:text-base;
+  }
+
+  .btn-cta {
+    @apply btn w-max border-none bg-gradient-to-r from-blue-500 to-blue-700 text-base text-slate-50;
+  }
+
   .btn-primary {
-    @apply w-[223px] cursor-pointer rounded-xl border-2 border-transparent bg-slate-50 px-6 py-[12px] text-center text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 md:w-max md:text-base;
+    @apply btn border-transparent bg-slate-50 text-slate-900;
   }
 
   .btn-secondary {
-    @apply w-[223px] cursor-pointer rounded-xl border-2 border-slate-100 bg-none px-6 py-[12px] text-center text-sm font-medium text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-500 md:w-max md:text-base;
+    @apply btn border-slate-100 bg-none text-slate-100;
   }
 
   .input {
@@ -18,7 +26,7 @@
   }
 
   .link {
-    @apply text-blue-400 underline-offset-2 transition-colors hover:text-blue-300 hover:underline;
+    @apply text-blue-400 underline-offset-2 transition-colors hover:text-blue-300;
   }
 
   .nav-link {

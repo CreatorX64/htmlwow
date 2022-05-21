@@ -2,6 +2,7 @@ import IconEmail from "@/icons/email";
 import IconGitHub from "@/icons/github";
 import IconInstagram from "@/icons/instagram";
 import IconLinkedIn from "@/icons/linkedin";
+import SoundIcon from "@/icons/sound";
 import IconSpotify from "@/icons/spotify";
 import IconTwitter from "@/icons/twitter";
 import Image from "next/image";
@@ -27,17 +28,17 @@ const AboutCard = () => {
         <p className="text-lg font-bold md:text-2xl">Hi, I&apos;m Hakan</p>
         <span className="text-lg font-bold md:col-start-3 md:text-2xl">👋</span>
         <button
-          className="flex items-center gap-[6px] rounded bg-slate-800 px-2 py-1 text-slate-400 md:col-start-2 md:row-start-1"
+          className="group flex items-center gap-[6px] rounded bg-slate-800 px-2 py-1 text-slate-400 md:col-start-2 md:row-start-1"
           onClick={playNameSound}
         >
-          <span className="font-mono tracking-widest">/ha:kan/</span>
-          <span className="relative block h-[14px] w-[14px] md:h-4 md:w-4">
-            <Image
-              src="/icons/sound.svg"
-              alt="Sound icon"
-              layout="fill"
-              aria-hidden
-            />
+          <span className="font-mono tracking-widest transition group-hover:text-slate-300">
+            /ha:kan/
+          </span>
+          <span
+            className="relative block h-[14px] w-[14px] md:h-4 md:w-4"
+            aria-hidden
+          >
+            <SoundIcon className="transition group-hover:fill-slate-300" />
           </span>
         </button>
       </div>

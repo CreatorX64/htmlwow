@@ -1,11 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { ExternalLinkIcon } from "@heroicons/react/solid";
 
 const Navigation = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   const toggleMobileNav = () => setIsMobileNavOpen(!isMobileNavOpen);
+
+  useEffect(() => {
+    if (isMobileNavOpen) {
+      document.body.classList.add("overflow-y-hidden");
+      document.documentElement.classList.add("overflow-y-hidden");
+    } else {
+      document.body.classList.remove("overflow-y-hidden");
+      document.documentElement.classList.remove("overflow-y-hidden");
+    }
+  }, [isMobileNavOpen]);
 
   return (
     <nav className="relative p-4 md:py-11 md:px-20">
@@ -46,26 +57,34 @@ const Navigation = () => {
               : "pointer-events-none translate-x-full md:pointer-events-auto md:translate-x-0"
           }`}
         >
-          <ul className="flex flex-col items-center justify-center gap-10 text-lg font-semibold text-slate-100 md:flex-row md:items-start md:gap-14 md:text-base md:font-normal">
+          <ul className="flex flex-col items-center justify-center gap-10 text-lg font-semibold text-slate-100 md:flex-row md:gap-14 md:text-base md:font-normal">
             <li>
               <Link href="/">
-                <a onClick={toggleMobileNav}>Home</a>
+                <a className="md:hidden" onClick={toggleMobileNav}>
+                  Home
+                </a>
+              </Link>
+              <Link href="/">
+                <a className="hidden md:inline">Home</a>
               </Link>
             </li>
-            {/* <li>
-              <Link href="/about">
-                <a onClick={toggleMobileNav}>About</a>
-              </Link>
-            </li> */}
+
             <li>
               <Link href="/license">
-                <a onClick={toggleMobileNav}>License</a>
+                <a className="md:hidden" onClick={toggleMobileNav}>
+                  License
+                </a>
+              </Link>
+              <Link href="/license">
+                <a className="hidden md:inline">License</a>
               </Link>
             </li>
+
             <li>
               <Link href="#!">
-                <a className="btn-primary border-none text-base bg-gradient-to-r from-blue-500 to-blue-700 text-slate-50">
-                  Visit our shop on Gumroad
+                <a className="btn-primary flex w-max items-center gap-2 border-none bg-gradient-to-r from-blue-500 to-blue-700 text-base text-slate-50">
+                  <span>Visit on Gumroad</span>
+                  <ExternalLinkIcon className="h-5 w-5" />
                 </a>
               </Link>
             </li>

@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  * {
+    @apply focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-blue-300;
+  }
+
+  *::selection {
+    @apply bg-violet-600 text-slate-50;
+  }
+}
+
 @layer components {
   .btn {
     @apply w-[223px] cursor-pointer rounded-xl border-2 px-6 py-[12px] text-center text-sm font-medium transition-transform hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-blue-500 md:w-max md:text-base;

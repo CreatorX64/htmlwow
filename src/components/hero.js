@@ -19,7 +19,7 @@ const Hero = () => {
           smooth={true}
           duration={500}
           offset={-60}
-          className="btn-primary flex items-center justify-center gap-[10px]"
+          className="btn-primary group flex items-center justify-center gap-[10px]"
         >
           <span>Explore all templates</span>
           <span className="relative block h-[14px] w-[12px]">
@@ -32,15 +32,11 @@ const Hero = () => {
           </span>
         </ScrollLink>
 
-        {/* <Link href="/about">
-          <a className="btn-secondary">About this project</a>
-        </Link> */}
-
         <ScrollLink
           to="about"
           smooth={true}
           duration={500}
-          offset={-60}
+          offset={-130}
           className="btn-secondary"
         >
           About this project

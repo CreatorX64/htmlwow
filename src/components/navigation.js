@@ -87,8 +87,7 @@ const Navigation = () => {
 
             <li>
               <Link href="#!">
-                {/* <a className="btn-primary flex w-max items-center gap-2 border-none bg-gradient-to-r from-blue-500 to-blue-700 text-base text-slate-50"> */}
-                <a className="btn-cta flex items-center gap-2">
+                <a className="btn-cta group flex items-center gap-2">
                   <span>Visit on Gumroad</span>
                   <ExternalLinkIcon className="h-5 w-5" />
                 </a>

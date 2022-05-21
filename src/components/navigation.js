@@ -47,24 +47,24 @@ const Navigation = () => {
           }`}
         >
           <ul className="flex flex-col items-center justify-center gap-10 text-lg font-semibold text-slate-100 md:flex-row md:items-start md:gap-14 md:text-base md:font-normal">
-            <li>
+            {/* <li>
               <Link href="/">
                 <a onClick={toggleMobileNav}>Home</a>
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link href="/about">
                 <a onClick={toggleMobileNav}>About</a>
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link href="/license">
                 <a onClick={toggleMobileNav}>License</a>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="#!">
-                <a className="btn-primary bg-gradient-to-r from-blue-500 to-blue-700 text-slate-50">
+                <a className="btn-primary border-none bg-gradient-to-r from-blue-500 to-blue-700 text-slate-50">
                   Visit our shop on Gumroad
                 </a>
               </Link>

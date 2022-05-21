@@ -33,9 +33,19 @@ const Hero = () => {
           </span>
         </ScrollLink>
 
-        <Link href="/about">
+        {/* <Link href="/about">
           <a className="btn-secondary">About this project</a>
-        </Link>
+        </Link> */}
+
+        <ScrollLink
+          to="about"
+          smooth={true}
+          duration={500}
+          offset={-60}
+          className="btn-secondary"
+        >
+          About this project
+        </ScrollLink>
       </div>
     </div>
   );

@@ -42,12 +42,14 @@ const HomePage = ({ templates }) => {
         {/* Wave decoration */}
         <div className="h-[105px] bg-[url('/wave-bottom.png')] bg-cover bg-center"></div>
 
-        <div className="px-4 py-16">
-          <h2 className="mb-8 text-center text-lg font-bold text-slate-50">
+        <div className="px-4 py-16 md:py-24 md:px-6 lg:py-36 lg:px-10">
+          <h2 className="mb-8 text-center text-lg font-bold text-slate-50 md:mb-12 md:text-3xl">
             Meet the creator...
           </h2>
 
-          <AboutCard />
+          <ScrollTarget name="about">
+            <AboutCard />
+          </ScrollTarget>
         </div>
       </div>
     </>

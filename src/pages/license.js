@@ -23,10 +23,11 @@ const LicensePage = () => {
             </h1>
 
             <p>
-              Upon purchasing and/or using web templates listed on this website,
-              you agree to this license. The terms are very simple. If you have
-              any questions regarding your usage permissions of any template
-              that you buy, please feel free to email me at:{" "}
+              Upon purchasing and/or using web templates listed on HTMLWOW
+              website and HTMLWOW Gumroad store, you agree to this license. The
+              terms are very simple. If you have any questions regarding your
+              usage permissions of any template that you buy, please feel free
+              to email me at:{" "}
               <a href="mailto:creatorx64@gmail.com" className="link">
                 CreatorX64@gmail.com
               </a>
@@ -37,6 +38,13 @@ const LicensePage = () => {
             </h2>
 
             <ul className="flex list-disc flex-col gap-3 pl-7">
+              <li>
+                Use the templates one time if you purchased Basic License.
+              </li>
+              <li>
+                Use the templates unlimited times if you purchased Premium
+                License.
+              </li>
               <li>
                 Use the templates for any personal and/or commercial project.
               </li>

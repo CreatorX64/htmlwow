@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useState } from "react";
 import emailjs from "@/lib/emailjs";
 import {
@@ -6,6 +5,8 @@ import {
   CheckCircleIcon,
   XIcon
 } from "@heroicons/react/outline";
+import IconEnvelope from "@/icons/envelope";
+import IconLoading from "@/icons/loading";
 
 const ContactForm = () => {
   const [isSendLoading, setIsSendLoading] = useState(false);
@@ -118,15 +119,7 @@ const ContactForm = () => {
         disabled={isSendLoading}
       >
         <span className="relative block h-5 w-5 md:h-6 md:w-6">
-          <Image
-            src={
-              isSendLoading ? "/icons/loading.svg" : "/icons/email-outline.svg"
-            }
-            alt="Envelope icon"
-            layout="fill"
-            className={isSendLoading ? "animate-spin" : ""}
-            aria-hidden
-          />
+          {isSendLoading ? <IconLoading /> : <IconEnvelope />}
         </span>
         <span>{isSendLoading ? "Sending..." : "Send your message"}</span>
       </button>

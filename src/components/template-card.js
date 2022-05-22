@@ -21,9 +21,7 @@ const TemplateCard = ({
 
       {/* Text content */}
       <div className="flex flex-col bg-slate-800 px-4 pt-5 pb-6 md:flex-1 md:px-6 md:py-7 lg:px-14 lg:py-9">
-        <h2 className="mb-2 font-bold lg:text-2xl">
-          {title} <span className="hidden md:inline">Template</span>
-        </h2>
+        <h2 className="mb-2 font-bold lg:text-2xl">{title}</h2>
         <p className="mb-4 text-sm text-slate-400 lg:text-base">{techStack}</p>
         <p className="mb-5 text-sm text-slate-200 lg:text-base">
           <span className="leading-loose md:hidden">{description}</span>

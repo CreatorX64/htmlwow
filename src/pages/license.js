@@ -11,6 +11,7 @@ const LicensePage = () => {
     <>
       <Head>
         <title>License Agreement | HTMLWOW</title>
+        <meta property="og:url" content="https://www.htmlwow.com/license" />
       </Head>
 
       {isPageLoaded || !isFirstLoad ? (

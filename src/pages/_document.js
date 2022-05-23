@@ -10,6 +10,14 @@ const Document = () => {
           name="description"
           content="HTML templates that make you go WOW."
         />
+        {/* OG tags */}
+        <meta property="og:title" content="HTMLWOW" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta
+          property="og:description"
+          content="HTML & Tailwind CSS templates for startups and developers in a hurry."
+        />
         {/* Favicons */}
         <link
           rel="apple-touch-icon"

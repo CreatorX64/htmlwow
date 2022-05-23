@@ -26,6 +26,7 @@ const HomePage = ({ templates }) => {
     <>
       <Head>
         <title>HTMLWOW — HTML templates that make you go WOW</title>
+        <meta property="og:url" content="https://www.htmlwow.com" />
       </Head>
 
       {isPageLoaded || !isFirstLoad ? (

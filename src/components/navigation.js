@@ -86,12 +86,15 @@ const Navigation = () => {
             </li>
 
             <li>
-              <Link href="#!">
-                <a className="btn-cta group flex items-center gap-2">
-                  <span>Visit on Gumroad</span>
-                  <ExternalLinkIcon className="h-5 w-5" />
-                </a>
-              </Link>
+              <a
+                href="https://htmlwow.gumroad.com/"
+                className="btn-cta group flex items-center gap-2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Visit on Gumroad</span>
+                <ExternalLinkIcon className="h-5 w-5" />
+              </a>
             </li>
           </ul>
         </div>

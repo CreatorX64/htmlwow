@@ -7,8 +7,8 @@
       "techStack": "HTML, CSS, Tailwind CSS, Vite",
       "description": "Nestor is a playful/minimalistic app landing page template built for startups and app makers.",
       "longDescription": "Nestor is a playful/minimalistic app landing page template built for startups and app makers. It’s extremely easy to customize and was developed with the best SEO & accessiblity practices in mind.",
-      "purchaseLink": "#!",
-      "previewLink": "#!"
+      "purchaseLink": "https://htmlwow.gumroad.com/l/nestor-template",
+      "previewLink": "https://nestor-template.netlify.app"
     },
     {
       "id": "delbin",
@@ -17,8 +17,8 @@
       "techStack": "HTML, CSS, Tailwind CSS, Vite",
       "description": "Delbin is a bold app landing page template built for startups and app makers.",
       "longDescription": "Delbin is a bold app landing page template built for startups and app makers. It’s extremely easy to customize and was developed with the best SEO & accessiblity practices in mind.",
-      "purchaseLink": "#!",
-      "previewLink": "#!"
+      "purchaseLink": "https://htmlwow.gumroad.com/l/delbin-template",
+      "previewLink": "https://delbin-template.netlify.app"
     }
   ]
 }

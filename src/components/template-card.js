@@ -36,6 +36,8 @@ const TemplateCard = ({
           <a
             href={previewLink}
             className="link flex items-center gap-[7px] text-sm"
+            target="_blank"
+            rel="noreferrer"
           >
             <span className="lg:text-base">See it live</span>
             <ExternalLinkIcon className="h-4 w-4" />

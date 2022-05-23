@@ -60,7 +60,7 @@ const AboutCard = () => {
         </p>
         <p className="leading-loose lg:relative">
           You can{" "}
-          <span className="xl:font-semibold xl:text-blue-200">contact</span> to
+          <span className="xl:font-semibold xl:text-blue-200">contact</span>
           me anytime to share a project idea, hire me as a freelancer, or just
           to say hi :)
           <span className="-left-8 -bottom-8 hidden h-[23px] w-[123px] bg-[url('/images/arrow-left.png')] bg-cover xl:absolute xl:block"></span>

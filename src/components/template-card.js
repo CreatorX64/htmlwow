@@ -31,7 +31,7 @@ const TemplateCard = ({
         </p>
         <div className="mt-auto flex items-center gap-5 lg:gap-7">
           <a className="btn-primary w-max" href={purchaseLink}>
-            Download
+            Purchase
           </a>
           <a
             href={previewLink}

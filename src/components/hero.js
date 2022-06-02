@@ -19,7 +19,7 @@ const Hero = () => {
         <span className="block text-base font-bold text-slate-50 md:text-[32px]">
           HTML templates that make you go
         </span>
-        <span className="-mt-6 block bg-[url('/images/pattern-title.jpg')] bg-cover bg-clip-text bg-center font-display text-[113px] text-transparent md:-mt-12 md:text-[227px]">
+        <span className="-mt-6 block bg-[url('/images/pattern-title.svg')] bg-clip-text bg-repeat font-display text-[113px] text-transparent md:-mt-12 md:text-[227px]">
           WOW
         </span>
       </h1>

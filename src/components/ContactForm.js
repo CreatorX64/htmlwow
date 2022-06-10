@@ -5,9 +5,9 @@ import {
   XIcon
 } from "@heroicons/react/outline";
 
-import emailjs from "@/lib/emailjs";
-import IconEnvelope from "@/icons/IconEnvelope";
-import IconLoading from "@/icons/IconLoading";
+import emailjs from "lib/emailjs";
+import IconEnvelope from "icons/IconEnvelope";
+import IconLoading from "icons/IconLoading";
 
 const ContactForm = () => {
   const [isSendLoading, setIsSendLoading] = useState(false);

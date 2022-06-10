@@ -1,5 +1,5 @@
-import TemplateCard from "@/components/TemplateCard";
-import ContactForm from "@/components/ContactForm";
+import TemplateCard from "components/TemplateCard";
+import ContactForm from "components/ContactForm";
 
 const Templates = ({ templates }) => {
   return (

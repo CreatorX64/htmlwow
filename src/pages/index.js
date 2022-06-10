@@ -22,8 +22,52 @@ const HomePage = ({ templates }) => {
   return (
     <>
       <Head>
-        <title>HTMLWOW — HTML templates that make you go WOW</title>
         <meta property="og:url" content="https://www.htmlwow.com" />
+        <title>HTMLWOW — HTML templates that make you go WOW</title>
+
+        {/* Preload images (above the fold) */}
+        <link
+          rel="preload"
+          href="/images/pattern-hero.jpg"
+          type="image/jpeg"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="/images/wave-top.png"
+          type="image/png"
+          as="image"
+        />
+
+        {/* Preload fonts (above the fold) */}
+        <link
+          rel="preload"
+          href="/fonts/modak-v18-latin-regular.woff2"
+          type="font/woff2"
+          as="font"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/rubik-v20-latin-regular.woff2"
+          type="font/woff2"
+          as="font"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/rubik-v20-latin-500.woff2"
+          type="font/woff2"
+          as="font"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/rubik-v20-latin-700.woff2"
+          type="font/woff2"
+          as="font"
+          crossOrigin="anonymous"
+        />
       </Head>
 
       <>

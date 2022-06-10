@@ -20,44 +20,6 @@ const Document = () => {
           content="HTML & Tailwind CSS templates for startups and developers in a hurry."
         />
 
-        {/* Preload images (above the fold) */}
-        <link
-          rel="preload"
-          href="/images/pattern-hero.jpg"
-          type="image/jpeg"
-          as="image"
-        />
-
-        {/* Preload fonts (above the fold) */}
-        <link
-          rel="preload"
-          href="/fonts/modak-v18-latin-regular.woff2"
-          type="font/woff2"
-          as="font"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/rubik-v20-latin-regular.woff2"
-          type="font/woff2"
-          as="font"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/rubik-v20-latin-500.woff2"
-          type="font/woff2"
-          as="font"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/rubik-v20-latin-700.woff2"
-          type="font/woff2"
-          as="font"
-          crossOrigin="anonymous"
-        />
-
         {/* Favicons */}
         <link
           rel="apple-touch-icon"

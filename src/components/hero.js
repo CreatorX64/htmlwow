@@ -11,7 +11,7 @@ const Hero = () => {
 
   return (
     <div
-      className={`mt-24 flex flex-col items-center justify-start transition duration-1000 ${
+      className={`mt-24 flex flex-col items-center justify-start transition delay-[400ms] duration-1000 ${
         isLoaded ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
       }`}
     >

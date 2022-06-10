@@ -1,11 +1,12 @@
 import Head from "next/head";
 import { Element as ScrollTarget } from "react-scroll";
-import { getTemplates } from "@/lib/templates";
-import Navigation from "@/components/navigation";
-import Templates from "@/components/templates";
-import Hero from "@/components/hero";
-import AboutCard from "@/components/about-card";
-import Footer from "@/components/footer";
+
+import { getTemplates } from "lib/templates";
+import Navigation from "components/Navigation";
+import Templates from "components/Templates";
+import Hero from "components/Hero";
+import AboutCard from "components/AboutCard";
+import Footer from "components/Footer";
 
 export const getStaticProps = () => {
   const templates = getTemplates();

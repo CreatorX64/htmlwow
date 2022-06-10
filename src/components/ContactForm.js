@@ -1,12 +1,13 @@
 import { useState } from "react";
-import emailjs from "@/lib/emailjs";
 import {
   ExclamationCircleIcon,
   CheckCircleIcon,
   XIcon
 } from "@heroicons/react/outline";
-import IconEnvelope from "@/icons/envelope";
-import IconLoading from "@/icons/loading";
+
+import emailjs from "lib/emailjs";
+import IconEnvelope from "icons/IconEnvelope";
+import IconLoading from "icons/IconLoading";
 
 const ContactForm = () => {
   const [isSendLoading, setIsSendLoading] = useState(false);

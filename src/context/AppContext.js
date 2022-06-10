@@ -1,4 +1,4 @@
-import { useContext, createContext, useState } from "react";
+import { createContext, useState } from "react";
 
 const AppContext = createContext();
 
@@ -16,12 +16,4 @@ export const AppContextProvider = ({ children }) => {
   );
 };
 
-export const useAppContext = () => {
-  const context = useContext(AppContext);
-
-  if (!context) {
-    throw new Error("useAppContext() must be called inside AppContextProvider");
-  }
-
-  return context;
-};
+export default AppContext;

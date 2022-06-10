@@ -10,6 +10,7 @@ const Document = () => {
           name="description"
           content="HTML templates that make you go WOW."
         />
+
         {/* OG tags */}
         <meta property="og:title" content="HTMLWOW" />
         <meta property="og:type" content="website" />
@@ -18,6 +19,37 @@ const Document = () => {
           property="og:description"
           content="HTML & Tailwind CSS templates for startups and developers in a hurry."
         />
+
+        {/* Preload fonts (above the fold) */}
+        <link
+          rel="preload"
+          href="/fonts/modak-v18-latin-regular.woff2"
+          type="font/woff2"
+          as="font"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/rubik-v20-latin-regular.woff2"
+          type="font/woff2"
+          as="font"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/rubik-v20-latin-500.woff2"
+          type="font/woff2"
+          as="font"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/rubik-v20-latin-700.woff2"
+          type="font/woff2"
+          as="font"
+          crossOrigin="anonymous"
+        />
+
         {/* Favicons */}
         <link
           rel="apple-touch-icon"
@@ -36,6 +68,7 @@ const Document = () => {
           sizes="16x16"
           href="/favicons/favicon-16x16.png"
         />
+
         {/* Manifest */}
         <link rel="manifest" href="/manifest.json" />
       </Head>

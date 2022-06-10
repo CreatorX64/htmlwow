@@ -1,6 +1,7 @@
 import Head from "next/head";
-import Footer from "@/components/footer";
-import Navigation from "@/components/navigation";
+
+import Navigation from "components/Navigation";
+import Footer from "components/Footer";
 
 const LicensePage = () => {
   return (

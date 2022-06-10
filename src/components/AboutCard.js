@@ -1,12 +1,13 @@
-import IconEmail from "@/icons/email";
-import IconGitHub from "@/icons/github";
-import IconInstagram from "@/icons/instagram";
-import IconLinkedIn from "@/icons/linkedin";
-import SoundIcon from "@/icons/sound";
-import IconSpotify from "@/icons/spotify";
-import IconTwitter from "@/icons/twitter";
 import Image from "next/image";
 import useSound from "use-sound";
+
+import IconEmail from "icons/IconEmail";
+import IconGitHub from "icons/IconGitHub";
+import IconInstagram from "icons/IconInstagram";
+import IconLinkedIn from "icons/IconLinkedIn";
+import IconSound from "icons/IconSound";
+import IconSpotify from "icons/IconSpotify";
+import IconTwitter from "icons/IconTwitter";
 
 const AboutCard = () => {
   const [playNameSound] = useSound("/audio/hakan.mp3");
@@ -38,7 +39,7 @@ const AboutCard = () => {
             className="relative block h-[14px] w-[14px] md:h-4 md:w-4"
             aria-hidden
           >
-            <SoundIcon className="transition group-hover:fill-slate-300" />
+            <IconSound className="transition group-hover:fill-slate-300" />
           </span>
         </button>
       </div>

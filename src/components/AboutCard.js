@@ -1,13 +1,13 @@
 import Image from "next/image";
 import useSound from "use-sound";
 
-import IconEmail from "icons/IconEmail";
-import IconGitHub from "icons/IconGitHub";
-import IconInstagram from "icons/IconInstagram";
-import IconLinkedIn from "icons/IconLinkedIn";
-import IconSound from "icons/IconSound";
-import IconSpotify from "icons/IconSpotify";
-import IconTwitter from "icons/IconTwitter";
+import IconEmail from "@/icons/IconEmail";
+import IconGitHub from "@/icons/IconGitHub";
+import IconInstagram from "@/icons/IconInstagram";
+import IconLinkedIn from "@/icons/IconLinkedIn";
+import IconSound from "@/icons/IconSound";
+import IconSpotify from "@/icons/IconSpotify";
+import IconTwitter from "@/icons/IconTwitter";
 
 const AboutCard = () => {
   const [playNameSound] = useSound("/audio/hakan.mp3");

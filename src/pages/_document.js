@@ -20,6 +20,14 @@ const Document = () => {
           content="HTML & Tailwind CSS templates for startups and developers in a hurry."
         />
 
+        {/* Preload images (above the fold) */}
+        <link
+          rel="preload"
+          href="/images/pattern-hero.jpg"
+          type="image/jpeg"
+          as="image"
+        />
+
         {/* Preload fonts (above the fold) */}
         <link
           rel="preload"

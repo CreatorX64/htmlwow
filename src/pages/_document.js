@@ -1,24 +1,9 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 const Document = () => {
   return (
     <Html lang="en" className="overflow-x-hidden">
       <Head>
-        {/* <!-- Google tag (gtag.js) --> */}
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-JYTB71Z2N8"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-JYTB71Z2N8');
-          `}
-        </Script>
-
         {/* Meta tags */}
         <meta httpEquiv="Content-Type" content="text/html" charSet="utf-8" />
         <meta

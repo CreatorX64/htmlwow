@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 import { Element as ScrollTarget } from "react-scroll";
 
 import { getTemplates } from "lib/templates";
@@ -69,6 +70,20 @@ const HomePage = ({ templates }) => {
           crossOrigin="anonymous"
         />
       </Head>
+
+      {/* <!-- Google tag (gtag.js) --> */}
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-JYTB71Z2N8"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-JYTB71Z2N8');
+        `}
+      </Script>
 
       <>
         <div className="bg-[url('/images/pattern-hero.jpg')] bg-cover bg-center">

@@ -20,10 +20,10 @@ const LicensePage = () => {
           </h1>
 
           <p>
-            Upon purchasing and/or using web templates listed on other
-            marketplaces where HTMLWOW is selling templates, you agree to this
-            license. The terms are very simple. If you have any questions
-            regarding your usage permissions of any template that you buy,
+            Upon using using web templates listed on this website and other
+            marketplaces where HTMLWOW is publishing templates, you agree to
+            this license. The terms are very simple. If you have any questions
+            regarding your usage permissions of any template that you download,
             please feel free to email me at:{" "}
             <a href="mailto:creatorx64@gmail.com" className="link">
               CreatorX64@gmail.com
@@ -31,7 +31,7 @@ const LicensePage = () => {
           </p>
 
           <h2 className="mt-8 mb-4 text-lg font-bold sm:mb-6 sm:mt-10 md:mb-8 md:mt-12 md:text-2xl">
-            Upon purchase, you&apos;re allowed to:
+            Upon download, you&apos;re allowed to:
           </h2>
 
           <ul className="flex list-disc flex-col gap-3 pl-7">
@@ -60,10 +60,6 @@ const LicensePage = () => {
             <li>
               Claim authorship of a template in it&apos;s recognizable/base form
               without any modifications.
-            </li>
-            <li>
-              Use any of the templates for personal and/or commercial purposes
-              without first purchasing them.
             </li>
           </ul>
         </div>

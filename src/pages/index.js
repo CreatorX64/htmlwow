@@ -23,7 +23,7 @@ const HomePage = ({ templates }) => {
     <>
       <Head>
         <meta property="og:url" content="https://www.htmlwow.com" />
-        <title>HTMLWOW — HTML templates that make you go WOW</title>
+        <title>HTMLWOW — Free HTML templates that make you go WOW</title>
 
         {/* Preload images (above the fold) */}
         <link

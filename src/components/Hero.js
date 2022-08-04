@@ -16,8 +16,8 @@ const Hero = () => {
       }`}
     >
       <h1 className="text-center">
-        <span className="block text-base font-bold text-slate-50 md:text-[32px]">
-          HTML templates that make you go
+        <span className="block text-sm font-bold text-slate-50 md:text-[28px]">
+          Free HTML templates that make you go
         </span>
         <span className="-mt-6 block bg-[url('/images/pattern-title.svg')] bg-clip-text bg-repeat font-display text-[113px] text-transparent md:-mt-12 md:text-[227px]">
           WOW

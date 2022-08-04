@@ -8,7 +8,7 @@ const Document = () => {
         <meta httpEquiv="Content-Type" content="text/html" charSet="utf-8" />
         <meta
           name="description"
-          content="HTML templates that make you go WOW."
+          content="Free HTML templates that make you go WOW."
         />
 
         {/* OG tags */}
@@ -17,7 +17,7 @@ const Document = () => {
         <meta property="og:image" content="/images/og-image.jpg" />
         <meta
           property="og:description"
-          content="HTML & Tailwind CSS templates for startups and developers in a hurry."
+          content="Free HTML & Tailwind CSS templates for startups and developers in a hurry."
         />
 
         {/* Favicons */}

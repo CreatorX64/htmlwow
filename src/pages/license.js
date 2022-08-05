@@ -68,10 +68,7 @@ const LicensePage = () => {
           </h2>
 
           <ul className="flex list-disc flex-col gap-3 pl-7">
-            <li>
-              Redistribute/resell the templates in any free or paid forms, in
-              any platform, even after purchasing the templates.
-            </li>
+            <li>Redistribute the templates in paid forms, in any platform.</li>
             <li>
               Claim authorship of a template in it&apos;s recognizable/base form
               without any modifications.

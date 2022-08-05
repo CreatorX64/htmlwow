@@ -47,9 +47,10 @@ const AboutCard = () => {
       {/* Bio text */}
       <div className="col-span-2 space-y-[14px] text-sm text-slate-200 md:col-start-2 md:row-span-3 md:row-start-2 md:pt-2 md:text-base">
         <p className="leading-loose">
-          I create website templates using HTML, CSS, JavaScript, and Tailwind
-          CSS. I built HTMLWOW to provide high quality, performant, and nicely
-          designed HTML templates for people in a hurry.
+          I create web[sites|apps] using HTML, CSS, JavaScript, TypeScript,
+          Tailwind CSS, Next.js, and more 🚀 I built HTMLWOW to provide high
+          quality, performant, and nicely designed HTML templates for developers
+          in a hurry.
         </p>
         <p className="leading-loose">
           While building projects, I keep the best design & development
